@@ -28,10 +28,10 @@ This Repo contains detailed Spark sample notebooks on Azure Synapse Analytics th
 In this scenario, you will ingest streaming and batch IoT data into Azure Cosmos DB using Synapse Spark, perform Joins and aggregations using Azure Synapse Link and perform Anomaly detection using Azure Cognitive Services on Spark (MMLSpark).
 
 There are four sample sample notebooks for the end-to-end IoT use case and they show how to
-1. [Ingest streaming data into Azure Cosmos DB collection using Structured Streaming](IoT/spark-notebooks/pyspark/1CosmosDBSynapseLinkStreamIngestion.ipynb)
-2. [Ingest Batch data into Azure Cosmos DB collection using Synapse Spark](IoT/spark-notebooks/pyspark/2CosmosDBSynapseLinkBatchIngestion.ipynb)
-3. [Perform Joins and aggregations across Azure Cosmos DB collections using Azure Synapse Link](IoT/spark-notebooks/pyspark/3CosmosDBSynapseLinkJoins.ipynb)
-4. [Perform Anomaly Detection using Azure Synapse Link and Azure Cognitive Services on Synapse Spark (MMLSpark)](IoT/spark-notebooks/pyspark/4CosmosDBSynapseLinkML.ipynb)
+1. [Ingest streaming data into Azure Cosmos DB collection using Structured Streaming](IoT/spark-notebooks/pyspark/1CosmosDBSynapseStreamIngestion.ipynb)
+2. [Ingest Batch data into Azure Cosmos DB collection using Synapse Spark](IoT/spark-notebooks/pyspark/2CosmosDBSynapseBatchIngestion.ipynb)
+3. [Perform Joins and aggregations across Azure Cosmos DB collections using Azure Synapse Link](IoT/spark-notebooks/pyspark/3CosmosDBSynapseJoins.ipynb)
+4. [Perform Anomaly Detection using Azure Synapse Link and Azure Cognitive Services on Synapse Spark (MMLSpark)](IoT/spark-notebooks/pyspark/4CosmosDBSynapseML.ipynb)
 
 ![IoT-components-dataflow](IoT/images/IoT-components-dataflow.PNG)
 
