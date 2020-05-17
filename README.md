@@ -1,14 +1,18 @@
 ---
 page_type: sample
 languages:
-- csharp
+- pySpark
+- SparkSQL
+- python
 products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
+- Azure Cosmos DB
+- Azure Synapse Link
+- MMLSpark
+description: "Sample Azure Cosmos DB - Synapse Link notebooks "
+urlFragment: "cosmosdb-synapse-link-samples"
 ---
 
-# Official Microsoft Sample
+# Azure Synapse Link for Azure Cosmos DB - Samples
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
@@ -18,36 +22,47 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
 
-Give a short description for your sample here. What does it do and why is it important?
+This Repo contains detailed Spark sample notebooks on Azure Synapse Analytics that shows end-to-end solutions using Azure Synapse Link for Azure Cosmos DB.
 
-## Contents
+## Scenario 1 - Internet of Things (IoT)
+In this scenario, you will ingest streaming and batch IoT data into Azure Cosmos DB using Synapse Spark, perform Joins and aggregations using Azure Synapse Link and perform Anomaly detection using Azure Cognitive Services on Spark (MMLSpark).
 
-Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
+There are four sample sample notebooks for the end-to-end IoT use case and they show how to
+1. [Ingest streaming data into Azure Cosmos DB collection using Structured Streaming](IoT/spark-notebooks/pyspark/1CosmosDBSynapseLinkStreamIngestion.ipynb)
+2. [Ingest Batch data into Azure Cosmos DB collection using Synapse Spark](IoT/spark-notebooks/pyspark/2CosmosDBSynapseLinkBatchIngestion.ipynb)
+3. [Perform Joins and aggregations across Azure Cosmos DB collections using Azure Synapse Link](IoT/spark-notebooks/pyspark/3CosmosDBSynapseLinkJoins.ipynb)
+4. [Perform Anomaly Detection using Azure Synapse Link and Azure Cognitive Services on Synapse Spark (MMLSpark)](IoT/spark-notebooks/pyspark/4CosmosDBSynapseLinkML.ipynb)
 
-| File/folder       | Description                                |
-|-------------------|--------------------------------------------|
-| `src`             | Sample source code.                        |
-| `.gitignore`      | Define what to ignore at commit time.      |
-| `CHANGELOG.md`    | List of changes to the sample.             |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
-| `README.md`       | This README file.                          |
-| `LICENSE`         | The license for the sample.                |
+![IoT-components-dataflow](IoT/images/IoT-components-dataflow.PNG)
+
 
 ## Prerequisites
-
-Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
+* Azure Cosmos DB account with Azure Synapse Link feature enabled
+* Two Azure Cosmos DB analytical store enabled collections under a Cosmos DB database
+* Azure Synapse workspace configured with a Spark pool
+* Linked Service on Azure Synapse studio with the connection details to the Azure Cosmos DB Database 
 
 ## Setup
+* Import the four "ipynb" spark notebooks under the "IoT/spark-notebooks/pyspark/" dir on to the Synapse workspace
 
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
-
-## Running the sample
-
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+## Running the notebooks
+* Attach the Spark pool created in the prerequisite to the spark notebook
+* Execute the notebook
 
 ## Key concepts
+* [Azure Synapse Link for Azure Cosmos DB](https://review.docs.microsoft.com/en-us/azure/cosmos-db/synapse-link?branch=release-build-cosmosdb)
+* [Azure Cosmos DB Analytical Store](https://review.docs.microsoft.com/en-us/azure/cosmos-db/analytical-store-introduction?branch=release-build-cosmosdb)
+* [Configure Synapse Link for Azure Cosmos DB](https://review.docs.microsoft.com/en-us/azure/cosmos-db/configure-synapse-link?branch=release-build-cosmosdb)
+* [Connect to Synapse Link from Synapse Studio](https://review.docs.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-connect-synapse-link-cosmos-db?branch=release-build-synapse)
+* [Query Cosmos DB Analytical Store with Synapse Spark](https://review.docs.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-query-analytical-store-spark?branch=release-build-synapse)
 
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+
+
+## Scenario 2 - Retail Recommendation System
+
+
+
+
 
 ## Contributing
 
