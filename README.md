@@ -63,7 +63,7 @@ Import these 2 "ipynb" spark notebooks under the "Retail/spark-notebooks/pyspark
 
 1. Attach the Spark pool created in the prerequisite to the spark notebook
 1. [Batch Ingestion of Sales Forecasting data on Synapse Spark](Retail/spark-notebooks/pyspark/1CosmoDBSynapseSparkBatchIngestion.ipynb)
-1. [Perform Sales Forecasting using Azure Synapse Link and Azure Automated Machine Learning on Synapse Spark](Retail/spark-notebooks/pyspark/2SalesForecasting.ipynb)
+1. [Perform Sales Forecasting using Azure Synapse Link and Azure Automated Machine Learning on Synapse Spark](Retail/spark-notebooks/pyspark/2SalesForecastingWithAML.ipynb)
 
 
 ## Key concepts
