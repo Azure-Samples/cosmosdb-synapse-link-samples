@@ -26,10 +26,8 @@ This Repo contains detailed Synapse Spark sample notebooks that shows end-to-end
 
 ## Prerequisites - Both Scenarios
 
-* Azure Cosmos DB account with Azure Synapse Link feature enabled
-* Two Azure Cosmos DB analytical store enabled collections under a Cosmos DB database
-* Azure Synapse workspace configured with a Spark pool
-* Linked Service on Azure Synapse studio with the connection details to the Azure Cosmos DB Database 
+* [Azure Cosmos DB account](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal)
+* [Azure Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace) configured with a [Spark pool](https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-apache-spark-pool)
 
 ## Scenario 1 - Internet of Things (IoT)
 
@@ -49,9 +47,9 @@ Import these 4 "ipynb" spark notebooks under the "IoT/spark-notebooks/pyspark/" 
 
 
 
-## Scenario 2 - Retail Recommendation System
+## Scenario 2 - Retail Forecasting
 
-In this scenario, you will ingest Retail data into Azure Cosmos DB using Azure Synapse Spark, perform Joins and aggregations using Azure Synapse Link and perform Forecasting using [Azure Automated Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml).
+In this scenario, you will ingest Retail data into Azure Cosmos DB using Azure Synapse Spark, perform joins and aggregations using Azure Synapse Link and perform Forecasting using [Azure Automated Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml).
 
 
 ![IoT-components-dataflow](/images/pipeline.PNG)
@@ -67,9 +65,9 @@ Import these 2 "ipynb" spark notebooks under the "Retail/spark-notebooks/pyspark
 
 
 ## Key concepts
-* [Azure Synapse Link for Azure Cosmos DB](https://review.docs.microsoft.com/en-us/azure/cosmos-db/synapse-link?branch=release-build-cosmosdb)
+* [Azure Synapse Link for Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/synapse-link-frequently-asked-questions #azure-cosmos-db-analytical-store)
 * [Azure Cosmos DB Analytical Store](https://review.docs.microsoft.com/en-us/azure/cosmos-db/analytical-store-introduction?branch=release-build-cosmosdb)
-* [Configure Synapse Link for Azure Cosmos DB](https://review.docs.microsoft.com/en-us/azure/cosmos-db/configure-synapse-link?branch=release-build-cosmosdb)
+* [Configure Synapse Link for Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/synapse-link-frequently-asked-questions #azure-cosmos-db-analytical-store)
 * [Connect to Synapse Link from Synapse Studio](https://review.docs.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-connect-synapse-link-cosmos-db?branch=release-build-synapse)
 * [Query Cosmos DB Analytical Store with Synapse Spark](https://review.docs.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-query-analytical-store-spark?branch=release-build-synapse)
 
