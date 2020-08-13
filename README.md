@@ -1,17 +1,3 @@
----
-page_type: sample
-languages:
-- pySpark
-- SparkSQL
-- python
-products:
-- Azure Cosmos DB
-- Azure Synapse Link
-- MMLSpark
-description: "Sample Azure Cosmos DB - Synapse Link notebooks "
-urlFragment: "cosmosdb-synapse-link-samples"
----
-
 # Azure Synapse Link for Azure Cosmos DB - Samples
 
 This repository has been migrated to [a new address](https://github.com/Azure-Samples/Synapse/tree/master/Notebooks/PySpark/Synapse%20Link%20for%20Cosmos%20DB%20samples).
